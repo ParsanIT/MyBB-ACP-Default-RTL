@@ -1,3 +1,8 @@
+## Intro
+
+MyBB 1.8 ACP(Admin Control Panel) Theme in RTL version for RTL languages. (based on Default Theme that exist in MyBB 1.8.39 Package)  
+This RTL version is fully compatible and is the best in terms of details. ;)
+
 ### How to use?
 
 1. Extract current release package .zip file to your mybb root. (or Upload files with current structure to your mybb root.)
