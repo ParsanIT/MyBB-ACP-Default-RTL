@@ -20,7 +20,7 @@
 	display: inline-block;
 	height: 100%;
 	vertical-align: middle;
-	margin-right: -0.05em;
+	margin-left: -0.05em;
 }
 
 .blocker.behind {
@@ -29,7 +29,7 @@
 
 .modal {
 	width: 400px;
-	text-align: left;
+	text-align: right;
 	background: #fff;
 	display: inline-block;
 	vertical-align: middle;
@@ -53,7 +53,7 @@
 .modal a.close-modal {
 	position: absolute;
 	top: -12.5px;
-	right: -12.5px;
+	left: -12.5px;
 	display: block;
 	width: 30px;
 	height: 30px;
@@ -67,8 +67,8 @@
 	height: 64px;
 	position: fixed;
 	top: 50%;
-	left: 50%;
-	margin-right: -32px;
+	right: 50%;
+	margin-left: -32px;
 	margin-top: -32px;
 	background: url(images/spinner_big.gif) no-repeat center center;
 	-webkit-border-radius: 8px;

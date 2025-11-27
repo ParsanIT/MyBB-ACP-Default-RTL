@@ -13,6 +13,7 @@ body, td {
 
 body {
 	overflow-y: scroll;
+	direction: rtl;
 }
 
 a {
@@ -34,7 +35,7 @@ a:hover {
 }
 
 #logo {
-	background: url(images/logo.png) 15px 15px no-repeat;
+	background: url(images/logo.png) right 15px top 15px no-repeat;
 	border-bottom: 1px solid #263C30;
 	height: 90px;
 }
@@ -45,7 +46,7 @@ a:hover {
 
 #welcome {
 	position: absolute;
-	right: 20px;
+	left: 20px;
 	top: 60px;
 	color: #999;
 	height: 20px;
@@ -61,21 +62,21 @@ a:hover {
 }
 
 #welcome .logout {
-	margin-left: 4px;
-	padding: 0 18px 2px 0;
-	background: url(images/icons/logout.png) no-repeat top right;
+	margin-right: 4px;
+	padding: 0 0 2px 18px;
+	background: url(images/icons/logout.png) no-repeat top left;
 }
 
 #welcome .forum {
-	margin-left: 4px;
-	padding: 1px 0 2px 20px;
-	background: url(images/icons/world.png) no-repeat top left;
+	margin-right: 4px;
+	padding: 1px 20px 2px 0;
+	background: url(images/icons/world.png) no-repeat top right;
 }
 
 #welcome .username {
-	margin-left: 4px;
-	padding: 0 0 2px 18px;
-	background: url(images/icons/user.png) no-repeat top left;
+	margin-right: 4px;
+	padding: 0 18px 2px 0;
+	background: url(images/icons/user.png) no-repeat top right;
 }
 
 /* Menu */
@@ -99,7 +100,7 @@ a:hover {
 
 #menu a {
 	font-weight: bold;
-	float: left;
+	float: right;
 	padding: 7px;
 	text-decoration: none;
 	color: #ddd;
@@ -128,7 +129,7 @@ a:hover {
 #content {
 	padding: 10px 15px;
 	margin: 0;
-	margin-left: 200px;
+	margin-right: 200px;
 }
 
 #content p {
@@ -166,7 +167,7 @@ a:hover {
 	color: #333;
 	padding: 0;
 	margin: 0;
-	float: left;
+	float: right;
 	font-size: 11px;
 }
 
@@ -230,16 +231,16 @@ a:hover {
 }
 
 .border_wrapper div.title {
-	background: #0066a2 url(images/thead.png) top left repeat-x;
+	background: #0066a2 url(images/thead.png) top right repeat-x;
 	color: #ffffff;
 	border-bottom: 1px solid #263c30;
 	padding: 8px;
 	font-weight: bold;
-	text-align: left;
+	text-align: right;
 	font-size: 120%;
-	border-radius: 5px 5px 0 0;
-	-moz-border-radius: 5px 5px 0 0;
-	-webkit-border-radius: 5px 5px 0 0;
+	border-radius: 5px 0 0 5px;
+	-moz-border-radius: 5px 0 0 5px;
+	-webkit-border-radius: 5px 0 0 5px;
 }
 
 .border_wrapper div.title a {
@@ -258,16 +259,16 @@ table.general {
 table.general td {
 	border-top: 1px solid #fafafa;
 	border-bottom: 1px solid #ccc;
-	border-right: 1px solid #ccc;
-	border-left: 1px solid #fafafa;
+	border-right: 1px solid #fafafa;
+	border-left: 1px solid #ccc;
 }
 
 table.general tr td:last-child {
-	border-right: 0;
+	border-left: 0;
 }
 
 table.general tr td:first-child {
-	border-left: 0;
+	border-right: 0;
 }
 
 table.general tr:last-child td {
@@ -293,7 +294,7 @@ table.general th {
 	padding: 8px;
 	font-size: 96%;
 	font-weight: bold;
-	text-align: left;
+	text-align: right;
 }
 
 table.general th a, table.general th {
@@ -306,15 +307,15 @@ table.general .alt_row td {
 }
 
 table.general tr:last-child td:first-child {
-	border-bottom-left-radius: 5px;
-	-moz-border-radius-bottomleft: 5px;
-	-webkit-border-bottom-left-radius: 5px;
-}
-
-table.general tr:last-child td:last-child {
 	border-bottom-right-radius: 5px;
 	-moz-border-radius-bottomright: 5px;
 	-webkit-border-bottom-right-radius: 5px;
+}
+
+table.general tr:last-child td:last-child {
+	border-bottom-left-radius: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	-webkit-border-bottom-left-radius: 5px;
 }
 
 .tfixed {
@@ -339,7 +340,7 @@ table.general tr:last-child td:last-child {
 }
 
 #footer .generation {
-	float: right;
+	float: left;
 }
 
 #footer a:link, #footer a:visited {
@@ -355,14 +356,14 @@ table.general tr:last-child td:last-child {
 
 .popup_button {
 	color: #444;
-	text-align: right;
+	text-align: left;
 	border: 1px solid #999;
 	padding: 3px 6px;
 	background: #e3e3e3 url(images/submit_bg.png) repeat-x top;
 	font-weight: bold;
 	margin-top: 3px;
 	margin-bottom: 3px;
-	margin-left: 3px;
+	margin-right: 3px;
 	border-radius: 5px;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
@@ -384,7 +385,7 @@ a.popup_button:hover {
 }
 
 .popup_menu {
-	margin: 1px 0 0 1px;
+	margin: 1px 1px 0 0;
 	background: #fff;
 	border: 1px solid #ccc;
 	border-radius: 5px;
@@ -394,7 +395,7 @@ a.popup_button:hover {
 
 .popup_menu .popup_item_container {
 	margin: 1px;
-	text-align: left;
+	text-align: right;
 }
 
 .popup_menu .popup_item {
@@ -588,7 +589,7 @@ input.submit_button {
 	color: #444;
 	font-weight: bold;
 	font-family: 'Lucida Grande', Tahoma, Verdana, Arial, sans-serif;
-	margin-right: 3px;
+	margin-left: 3px;
 	font-size: 1.1em;
 	border-radius: 5px;
 	-moz-border-radius: 5px;
@@ -616,7 +617,7 @@ input.submit_button:hover {
 	margin: 10px 0;
 	padding: 10px;
 	font-weight: bold;
-  	border: 1px solid #FC6;
+	border: 1px solid #FC6;
 	background: #FFC;
 	color: #C00;
 	border-radius: 5px;
@@ -625,7 +626,7 @@ input.submit_button:hover {
 }
 
 .confirm_action p {
-  	margin: 0;
+	margin: 0;
 }
 
 input.button_yes,
@@ -634,7 +635,7 @@ input.button_yes:hover {
 	border: 1px solid #8DC93E;
 	padding: 4px 6px;
 	font-weight: bold;
-	margin-right: 3px;
+	margin-left: 3px;
 }
 
 input.button_no,
@@ -647,11 +648,11 @@ input.button_no:hover {
 
 .label_radio_yes, .label_radio_on, .label_radio_no, .label_radio_off {
 	padding: 4px 6px;
-	margin-right: 5px;
+	margin-left: 5px;
 	margin-top: 5px;
 	display: block;
 	width: 60px;
-	float: left;
+	float: right;
 }
 
 .label_radio_yes, .label_radio_on {
@@ -673,12 +674,12 @@ input.button_no:hover {
 input.radio_input {
 	vertical-align: middle;
 	margin: 0;
-	margin-right: 9px;
+	margin-left: 9px;
 }
 
 #flash_message {
 	margin: 10px 0;
-	padding: 10px 10px 10px 32px;
+	padding: 10px 32px 10px 10px;
 	font-weight: bold;
 	background: #efefef;
 	border: 1px solid #ccc;
@@ -689,24 +690,24 @@ input.radio_input {
 
 #flash_message.error {
 	border: 1px solid #FC6;
-	background: #FFC url('images/icons/error.png') no-repeat 10px 8px;
+	background: #FFC url('images/icons/error.png') no-repeat right 10px top 8px;
 	color: #C00;
 }
 
 #flash_message.success {
 	border: #080 1px solid;
 	color: #080;
-	background: #E8FCDC url('images/icons/success.png') no-repeat 10px 8px;
+	background: #E8FCDC url('images/icons/success.png') no-repeat right 10px top 8px;
 }
 
 .alert {
 	margin: 10px 0;
-	padding: 10px 10px 10px 32px;
+	padding: 10px 32px 10px 10px;
 	border: #FC6 1px solid;
 	border-radius: 5px;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
-	background: #ffc url('images/icons/warning.png') no-repeat 10px 8px;
+	background: #ffc url('images/icons/warning.png') no-repeat right 10px top 8px;
 	color: #C00;
 	font-style: normal;
 	font-weight: bold;
@@ -743,22 +744,22 @@ div.error p, div.success p {
 div.error p em, div.success p em {
 	font-style: normal;
 	font-weight: bold;
-	padding-left: 24px;
+	padding-right: 24px;
 	display: block;
 }
 
 div.error p em {
 	color: #C00;
-	background: url('images/icons/error.png') no-repeat;
+	background: url('images/icons/error.png') right no-repeat;
 }
 
 div.success p em {
 	color: #080;
-	background: url('images/icons/success.png') no-repeat;
+	background: url('images/icons/success.png') right no-repeat;
 }
 
 div.success ul, div.error.ul {
-	margin-left: 24px;
+	margin-right: 24px;
 }
 
 .nav_tabs {
@@ -767,26 +768,26 @@ div.success ul, div.error.ul {
 .nav_tabs ul {
 	list-style: none;
 	padding: 0;
-	margin: 0 0 0 10px;
+	margin: 0 10px 0 0;
 	height: 32px;
 }
 
 .nav_tabs li {
-	float: left;
-	padding-right: 5px;
+	float: right;
+	padding-left: 5px;
 }
 
 .nav_tabs li.right {
-	float: right;
-	padding-left: 5px;
-	padding-right: 0;
+	float: left;
+	padding-right: 5px;
+	padding-left: 0;
 }
 
 .nav_tabs li a {
-	float: left;
+	float: right;
 	border-bottom: 0;
 	display: block;
-	font-family: 'Lucida Grande', 'Trebuchet MS', Verdana, Sans-Serif;
+	font-family: 'Lucida Grande', 'Trebuchet MS', Tahoma, Verdana, Sans-Serif;
 	font-size: 140%;
 	letter-spacing: -1px;
 	color: #888;
@@ -800,8 +801,8 @@ div.success ul, div.error.ul {
 }
 
 .nav_tabs li.active a {
-    color: #555;
-    font-size: 150%;
+	color: #555;
+	font-size: 150%;
 	font-weight: bold;
 	padding-top: 5px;
 	border-bottom: 3px solid #555;
@@ -820,18 +821,18 @@ div.success ul, div.error.ul {
 }
 
 * html .nav_tabs .tab_description {
-	margin-left: 3px;
+	margin-right: 3px;
 }
 *.align_center, table.general th.align_center, input.align_center {
 	text-align: center;
 }
 
 .float_right {
-	float: right;
+	float: left;
 }
 
 .float_left {
-	float: left;
+	float: right;
 }
 
 a img {
@@ -839,26 +840,26 @@ a img {
 }
 
 option {
-	padding-right: 10px;
+	padding-left: 10px;
 }
 
 ul.tabs {
 	width: 100%;
-	margin: 10px 0 0 10px;
+	margin: 10px 10px 0 0;
 	padding: 0;
 	list-style: none;
 	height: 27px;
 }
 
 ul.tabs li {
-	float: left;
+	float: right;
 	margin: 0;
 	padding: 0;
 	list-style: none;
 }
 
 ul.tabs a {
-	float: left;
+	float: right;
 	padding: 6px 10px;
 	text-decoration: none;
 	color: #888;
@@ -873,16 +874,16 @@ ul.tabs a:hover {
 ul.tabs li a.active {
 	color: #fff;
 	font-size: 100%;
-	text-align: left;
+	text-align: right;
 	font-weight: bold;
 	color: #333;
 	border: 1px solid #ddd;
 	border-bottom: 1px solid #ccc;
 	margin-top: -1px;
 	background: #f5f5f5;
-	border-radius: 5px 5px 0 0;
-	-moz-border-radius: 5px 5px 0 0;
-	-webkit-border-radius: 5px 5px 0 0;
+	border-radius: 5px 0 0 5px;
+	-moz-border-radius: 5px 0 0 5px;
+	-webkit-border-radius: 5px 0 0 5px;
 }
 
 .editor {
@@ -915,9 +916,9 @@ ul.tabs li a.active {
     width: 80px;
     background: #fff;
     border: 1px solid #ccc;
-    float: left;
-    clear: left;
-    margin-right: 5px;
+    float: right;
+    clear: right;
+    margin-left: 5px;
     text-align: center;
 }
 
@@ -926,8 +927,8 @@ ul.tabs li a.active {
 }
 
 .user_details {
-    float: left;
-    margin-left: 5px;
+    float: right;
+    margin-right: 5px;
     line-height: 1.7;
 }
 
@@ -969,11 +970,11 @@ ul.tabs li a.active {
 
 .view_fields .enabled, .view_fields .disabled {
 	width: 200px;
-	float: left;
+	float: right;
 }
 
 .view_fields .disabled {
-	margin-left: 20px;
+	margin-right: 20px;
 }
 
 .view_fields .fields_title {
@@ -1001,21 +1002,21 @@ ul.tabs li a.active {
 	color: #fff;
 	font-size: 11px;
 	margin-bottom: 2px;
-	margin-right: 5px;
+	margin-left: 5px;
 }
 
 .quick_perm_fields .enabled, .quick_perm_fields .disabled {
 	width: 49%;
-	float: left;
+	float: right;
 }
 
 .quick_perm_fields .enabled {
-	border-right: 5px solid #666;
+	border-left: 5px solid #666;
 }
 
 .quick_perm_fields .disabled {
-	float: right;
-	margin-left: 0px;
+	float: left;
+	margin-right: 0px;
 }
 
 .quick_perm_fields .fields_title {
@@ -1046,7 +1047,7 @@ ul.tabs li a.active {
 	color: #fff;
 	font-size: 11px;
 	margin-bottom: 2px;
-	margin-right: 10px;
+	margin-left: 10px;
 }
 
 input.field50 {
@@ -1068,18 +1069,18 @@ input.search_default {
 }
 
 input.image_button {
-	margin-left: 5px;
+	margin-right: 5px;
 	vertical-align: bottom;
 }
 
 input.search_button {
 	background: #fff url(images/icons/search.png) no-repeat;
-	background-position: 4px 7px;
+	background-position: right 4px top 7px;
 	border: 0px;
 	padding: 4px;
-	padding-left: 23px;
+	padding-right: 23px;
 	font-size: 14px;
-	font-family: 'Lucida Grande', 'Trebuchet MS', Verdana, Sans-Serif;
+	font-family: 'Lucida Grande', 'Trebuchet MS', Tahoma, Verdana, Sans-Serif;
 	color: #6F6F6F;
 	font-weight: bold;
 	height: 30px;
@@ -1116,29 +1117,29 @@ input.search_button {
 }
 
 .ie6.top-right {
-	right: 				auto;
+	left: 				auto;
 	bottom: 			auto;
-	left: 				expression( ( 0 - jGrowl.offsetWidth + ( document.documentElement.clientWidth ? document.documentElement.clientWidth : document.body.clientWidth ) + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );
+	right: 				expression( ( 0 - jGrowl.offsetWidth + ( document.documentElement.clientWidth ? document.documentElement.clientWidth : document.body.clientWidth ) + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );
 	top: 				expression( ( 0 + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );
 }
 
 .ie6.top-left {
-	left: 				expression( ( 0 + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );
+	right: 				expression( ( 0 + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );
 	top: 				expression( ( 0 + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );
 }
 
 .ie6.bottom-right {
-	left: 				expression( ( 0 - jGrowl.offsetWidth + ( document.documentElement.clientWidth ? document.documentElement.clientWidth : document.body.clientWidth ) + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );
+	right: 				expression( ( 0 - jGrowl.offsetWidth + ( document.documentElement.clientWidth ? document.documentElement.clientWidth : document.body.clientWidth ) + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );
 	top: 				expression( ( 0 - jGrowl.offsetHeight + ( document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight ) + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );
 }
 
 .ie6.bottom-left {
-	left: 				expression( ( 0 + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );
+	right: 				expression( ( 0 + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );
 	top: 				expression( ( 0 - jGrowl.offsetHeight + ( document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight ) + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );
 }
 
 .ie6.center {
-	left: 				expression( ( 0 + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );
+	right: 				expression( ( 0 + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );
 	top: 				expression( ( 0 + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );
 	width: 				100%;
 }
@@ -1153,29 +1154,29 @@ input.search_button {
 }
 
 .jGrowl.top-left {
-	left: 				0px;
+	right: 				0px;
 	top: 				0px;
 }
 
 .jGrowl.top-right {
-	right: 				0px;
+	left: 				0px;
 	top: 				0px;
 }
 
 .jGrowl.bottom-left {
-	left: 				0px;
+	right: 				0px;
 	bottom:				0px;
 }
 
 .jGrowl.bottom-right {
-	right: 				0px;
+	left: 				0px;
 	bottom: 			0px;
 }
 
 .jGrowl.center {
 	top: 				0px;
 	width: 				50%;
-	left: 				25%;
+	right: 				25%;
 }
 
 /** Cross Browser Styling **/
@@ -1219,7 +1220,7 @@ input.search_button {
 
 .jGrowl .jGrowl-notification .jGrowl-close {
 	z-index:				99;
-	float: 					right;
+	float: 					left;
 	font-weight: 			bold;
 	font-size: 				1em;
 	cursor:					pointer;
@@ -1260,3 +1261,13 @@ input.search_button {
 }
 
 /** jGrowl End **/
+
+#settings_search{
+	text-align: left !important;
+}
+#search_form > div {
+	text-align: left !important;
+}
+#group_list .border_wrapper .title span[style="float: right;"] {
+	float: left !important;
+}

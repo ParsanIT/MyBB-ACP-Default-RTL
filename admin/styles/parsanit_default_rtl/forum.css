@@ -6,7 +6,7 @@
 
 .modqueue_controls {
 	width: 270px;
-	float: right;
+	float: left;
 	text-align: center;
 	border: 1px solid #ccc;
 	background: #fff;
@@ -15,7 +15,7 @@
 }
 
 .modqueue_controls label {
-	margin-right: 8px;
+	margin-left: 8px;
 }
 
 .label_radio_ignore, .label_radio_delete, .label_radio_approve {
@@ -58,7 +58,7 @@
 
 .forum_settings_bit input {
 	vertical-align: middle;
-	margin-right: 8px;
+	margin-left: 8px;
 }
 
 .forum_settings_bit select,
@@ -72,5 +72,5 @@
 }
 
 .forum_settings_bit small {
-	padding-left: 25px;
+	padding-right: 25px;
 }

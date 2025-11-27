@@ -35,7 +35,7 @@
 
 .langeditor_editwithfile,
 .langeditor_editfile {
-	text-align: left;
+	text-align: right;
 }
 
 .langeditor_edit,
@@ -68,10 +68,10 @@
 
 .langeditor_rtl {
 	direction: rtl;
-    unicode-bidi: bidi-override;
+	unicode-bidi: bidi-override;
 }
 
 .langeditor_ltr {
 	direction: ltr;
-    unicode-bidi: bidi-override;
+	unicode-bidi: bidi-override;
 }
